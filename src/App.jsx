@@ -142,7 +142,6 @@ function App() {
           <div className="flex justify-between h-16">
             <div className="flex items-center space-x-4">
               <div className=" w-14 h-14 ">
-                {/* <div className=" inset-0 bg-blue-500  "></div> */}
                 <img src={Logo} alt="Wifibre Logo" className=" w-14 h-14 " />
               </div>
               <span className="text-xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 text-transparent bg-clip-text">
@@ -150,17 +149,6 @@ function App() {
               </span>
             </div>
 
-            {/* <div className="hidden md:flex items-center space-x-8">
-              {["Services", "Technologies", "Contact"].map((item) => (
-                <a
-                  key={item}
-                  href={`#${item.toLowerCase()}`}
-                  className="text-gray-300 hover:text-blue-400 transition-colors px-3 py-2 rounded-lg hover:bg-gray-800"
-                >
-                  {item}
-                </a>
-              ))}
-            </div> */}
 
             <div className="hidden md:flex items-center space-x-8">
               {navItems.map((item) => (
@@ -188,20 +176,7 @@ function App() {
           </div>
         </div>
 
-        {/* {isMenuOpen && (
-          <div className="md:hidden bg-gray-800 border-t border-gray-700">
-            {["Services", "Technologies", "Contact"].map((item) => (
-              <a
-                key={item}
-                href={`#${item.toLowerCase()}`}
-                className="block px-4 py-3 text-gray-300 hover:bg-gray-700"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {item}
-              </a>
-            ))}
-          </div>
-        )} */}
+     
         {isMenuOpen && (
           <div className="md:hidden bg-gray-800 border-t border-gray-700">
             {navItems.map((item) => (
@@ -230,15 +205,7 @@ function App() {
               Solutions innovantes en fibre optique, réseaux et sécurité pour
               votre entreprise
             </p>
-            {/* <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="px-8 py-4 bg-blue-600 hover:bg-blue-700 rounded-lg flex items-center justify-center space-x-2 transition-all transform hover:scale-105">
-                <span>Nos Services</span>
-                <ArrowRight className="w-5 h-5" />
-              </button>
-              <button className="px-8 py-4 border border-blue-400 hover:bg-blue-900/30 rounded-lg transition-all">
-                Contactez-nous
-              </button>
-            </div> */}
+          
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
@@ -329,27 +296,7 @@ function App() {
       </div>
 
       {/* Technologies Section */}
-      {/* <div id="technologies" className="relative py-20">
-        <NetworkBackground />
-        <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-cyan-400 text-transparent bg-clip-text">
-            Notre Expertise Technique
-          </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {features.map((feature, index) => (
-              <div
-                key={index}
-                className="bg-gray-800/50 backdrop-blur p-6 rounded-xl border border-gray-700 hover:border-blue-500 transition-all"
-              >
-                <div className="flex items-center space-x-4 text-blue-400">
-                  {feature.icon}
-                  <span className="font-medium">{feature.text}</span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div> */}
+ 
 
       <div id="contact" className="relative py-20 bg-gray-800/50">
         <div className="max-w-7xl mx-auto px-4">
@@ -434,88 +381,6 @@ function App() {
           </div>
         </div>
       </div>
-
-      {/* Contact Section */}
-      {/* <div id="contact" className="relative py-20 bg-gray-800/50">
-        <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-cyan-400 text-transparent bg-clip-text">
-            Contactez Nos Experts
-          </h2>
-          <div className="grid md:grid-cols-2 gap-12">
-            <div className="space-y-8">
-              {[
-                { icon: <Phone className="w-6 h-6" />, text: "0770404839" },
-                {
-                  icon: <Mail className="w-6 h-6" />,
-                  text: "wifibre.entrepreneur@gmail.com",
-                },
-                {
-                  icon: <MapPin className="w-6 h-6" />,
-                  text: "Cité 440 logts LSP, Ain Malha, Djasr Kasentina",
-                },
-              ].map((contact, index) => (
-                <div
-                  key={index}
-                  className="flex items-center space-x-4 text-gray-300 hover:text-blue-400 transition-colors"
-                >
-                  <div className="text-blue-400">{contact.icon}</div>
-                  <span>{contact.text}</span>
-                </div>
-              ))}
-              <div className="pt-4 text-gray-400">
-                <p>NIF: 002318044410188</p>
-              </div>
-            </div>
-            <div className="grid grid-cols-2 gap-4">
-              {/* {["WhatsApp", "Viber", "Telegram", "Facebook"].map(
-                (platform, index) => (
-                  <button
-                    key={index}
-                    className="flex items-center justify-center px-6 py-3 bg-gray-800 hover:bg-gray-700 rounded-lg border border-gray-700 hover:border-blue-500 transition-all"
-                  >
-                    {platform}
-                  </button>
-                )
-              )} */}
-
-      {/* <div className="grid grid-cols-2 gap-4">
-                <a
-                  href="https://wa.me/+213770404839" // Replace with your WhatsApp number
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center px-6 py-3 bg-gray-800 hover:bg-gray-700 rounded-lg border border-gray-700 hover:border-blue-500 transition-all"
-                >
-                  WhatsApp
-                </a>
-                <a
-                  href="viber://chat?number=+213770404839" // Replace with your Viber number
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center px-6 py-3 bg-gray-800 hover:bg-gray-700 rounded-lg border border-gray-700 hover:border-blue-500 transition-all"
-                >
-                  Viber
-                </a>
-                <a
-                  href="https://t.me/yourTelegramUsername" // Replace with your Telegram username
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center px-6 py-3 bg-gray-800 hover:bg-gray-700 rounded-lg border border-gray-700 hover:border-blue-500 transition-all"
-                >
-                  Telegram
-                </a>
-                <a
-                  href="https://facebook.com/yourFacebookPage" // Replace with your Facebook page URL
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center px-6 py-3 bg-gray-800 hover:bg-gray-700 rounded-lg border border-gray-700 hover:border-blue-500 transition-all"
-                >
-                  Facebook
-                </a>
-              </div> 
-            </div>
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 }
