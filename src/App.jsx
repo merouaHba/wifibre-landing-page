@@ -194,6 +194,7 @@ function App() {
       {/* Hero Section */}
       <div className="relative pt-16 overflow-hidden">
         <NetworkBackground />
+        
         <div className="max-w-7xl mx-auto px-4 pt-20 pb-32 relative">
           <div className="text-center">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 text-transparent bg-clip-text">
