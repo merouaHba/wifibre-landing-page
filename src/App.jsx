@@ -145,7 +145,7 @@ function App() {
                 <img src={Logo} alt="Wifibre Logo" className=" w-14 h-14 " />
               </div>
               <span className="text-xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 text-transparent bg-clip-text">
-                WIFIBRE
+                WIFIBRE Entrepreneur
               </span>
             </div>
 
