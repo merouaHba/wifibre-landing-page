@@ -145,10 +145,9 @@ function App() {
                 <img src={Logo} alt="Wifibre Logo" className=" w-14 h-14 " />
               </div>
               <span className="text-xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 text-transparent bg-clip-text">
-                WIFIBRE
+                WIFIBRE Entrepreneur
               </span>
             </div>
-
 
             <div className="hidden md:flex items-center space-x-8">
               {navItems.map((item) => (
@@ -176,7 +175,6 @@ function App() {
           </div>
         </div>
 
-     
         {isMenuOpen && (
           <div className="md:hidden bg-gray-800 border-t border-gray-700">
             {navItems.map((item) => (
@@ -198,14 +196,13 @@ function App() {
         <NetworkBackground />
         <div className="max-w-7xl mx-auto px-4 pt-20 pb-32 relative">
           <div className="text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 text-transparent bg-clip-text">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 text-transparent bg-clip-text">
               L&#39;Excellence en Télécommunications
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-3xl mx-auto">
               Solutions innovantes en fibre optique, réseaux et sécurité pour
               votre entreprise
             </p>
-          
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
@@ -296,7 +293,6 @@ function App() {
       </div>
 
       {/* Technologies Section */}
- 
 
       <div id="contact" className="relative py-20 bg-gray-800/50">
         <div className="max-w-7xl mx-auto px-4">
