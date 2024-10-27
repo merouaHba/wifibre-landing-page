@@ -92,7 +92,7 @@ function App() {
      icon: <Send className="w-5 h-5" />,
      color:
        "hover:bg-blue-600/20 hover:border-blue-500 group-hover:text-blue-500",
-     link: "https://t.me/yourTelegramUsername",
+     link: "https://t.me/+213770404839",
    },
    {
      name: "Facebook",
