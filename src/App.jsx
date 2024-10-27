@@ -87,7 +87,7 @@ function App() {
      cl: "bg-purple-600/50",
      color:
        "hover:bg-purple-600/20 hover:border-purple-500 group-hover:text-purple-500",
-     link: "viber://chat?number=+213770404839",
+     link: "viber://chat?number=%2B213770404839",
    },
    {
      name: "Telegram",
@@ -316,7 +316,7 @@ function App() {
                   {[
                     {
                       icon: <Phone className="w-6 h-6" />,
-                      text: "0770404839",
+                      text: "+213770404839",
                       label: "Téléphone",
                     },
                     {
