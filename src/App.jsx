@@ -76,6 +76,7 @@ function App() {
    {
      name: "WhatsApp",
      icon: <MessageCircle className="w-5 h-5" />,
+     cl: "bg-green-600/50",
      color:
        "hover:bg-green-600/20 hover:border-green-500 group-hover:text-green-500",
      link: "https://wa.me/+213770404839",
@@ -83,6 +84,7 @@ function App() {
    {
      name: "Viber",
      icon: <Phone className="w-5 h-5" />,
+     cl: "bg-purple-600/50",
      color:
        "hover:bg-purple-600/20 hover:border-purple-500 group-hover:text-purple-500",
      link: "viber://chat?number=+213770404839",
@@ -90,6 +92,7 @@ function App() {
    {
      name: "Telegram",
      icon: <Send className="w-5 h-5" />,
+     cl: "bg-blue-600/50",
      color:
        "hover:bg-blue-600/20 hover:border-blue-500 group-hover:text-blue-500",
      link: "https://t.me/+213770404839",
@@ -97,6 +100,7 @@ function App() {
    {
      name: "Facebook",
      icon: <Facebook className="w-5 h-5" />,
+     cl: "bg-blue-700/50",
      color:
        "hover:bg-blue-700/20 hover:border-blue-600 group-hover:text-blue-600",
      link: "https://www.facebook.com/profile.php?id=100083683237978&mibextid=qi2Omg",
@@ -354,7 +358,9 @@ function App() {
                     rel="noopener noreferrer"
                     className={`group flex items-center space-x-3 p-4 bg-gray-800/50 backdrop-blur rounded-xl border border-gray-700 transition-all ${platform.color}`}
                   >
-                    <div className="p-2 bg-gray-700/50 rounded-lg transition-colors">
+                    <div
+                      className={`p-2 ${platform.cl}  rounded-lg transition-colors`}
+                    >
                       {platform.icon}
                     </div>
                     <span className="font-medium">{platform.name}</span>
@@ -366,7 +372,6 @@ function App() {
             {/* Map Section */}
             <div className="bg-gray-800/50 backdrop-blur p-6 rounded-xl border border-gray-700 h-full min-h-[400px]">
               <div className="relative h-full w-full rounded-lg overflow-hidden">
-
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3199.043898356681!2d3.053734!3d36.697483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzbCsDQxJzUwLjkiTiAzwrAwMycxMy40IkU!5e0!3m2!1sfr!2sdz!4v1730029473122!5m2!1sfr!2sdz"
                   className="absolute inset-0 w-full h-full border-0 rounded-lg"
